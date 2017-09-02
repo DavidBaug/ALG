@@ -1,0 +1,64 @@
+gnuplot> g(x)=a*x*x*x+b*x*x+c*x+d
+gnuplot> fit g(x) 'tiempos_quicksort.dat' via a,b,c,d
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.7851681666e+12   0.00e+00  2.49e+04    7.872519e-14   4.429642e-07  -1.757891e-03   1.000000e+00
+   1 1.7876137669e+08  -1.56e+09  2.49e+03    3.961720e-14  -1.233177e-08  -1.630539e-03   1.000316e+00
+   2 8.7142305943e+05  -2.04e+07  2.49e+02   -7.699190e-15   5.739935e-09  -1.014861e-03   1.002754e+00
+   3 5.4990873538e+02  -1.58e+08  2.49e+01   -2.750293e-16   2.063374e-10  -3.890526e-05   1.006612e+00
+   4 5.0030086863e+01  -9.99e+05  2.49e+00   -6.446430e-17   5.534255e-11  -1.337305e-05   9.190383e-01
+   5 4.5495219241e-01  -1.09e+07  2.49e-01   -6.245063e-18   5.419639e-12  -8.878165e-07   8.649819e-02
+   6 4.0670682203e-03  -1.11e+07  2.49e-02   -1.498692e-19   1.922456e-13   4.198233e-07  -7.399415e-04
+   7 4.0665731478e-03  -1.22e+01  2.49e-03   -1.434757e-19   1.867623e-13   4.211950e-07  -8.314493e-04
+   8 4.0665731478e-03  -1.28e-09  2.49e-04   -1.434756e-19   1.867623e-13   4.211950e-07  -8.314503e-04
+iter      chisq       delta/lim  lambda   a             b             c             d            
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.00406657
+rel. change during last iteration : -1.27974e-14
+
+degrees of freedom    (FIT_NDF)                        : 993
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00202367
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.09524e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -1.43476e-19     +/- 2.738e-20    (19.08%)
+b               = 1.86762e-13      +/- 2.09e-14     (11.19%)
+c               = 4.21195e-07      +/- 4.524e-09    (1.074%)
+d               = -0.00083145      +/- 0.0002632    (31.65%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.986  1.000 
+c               0.918 -0.969  1.000 
+d              -0.672  0.754 -0.872  1.000 
+lineal
+gnuplot> h(x)=a*x+b
+gnuplot> fit h(x) 'tiempos_quicksort.dat' via a,b
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.8231852990e+01   0.00e+00  3.14e-07    7.872512e-14   4.429642e-07
+   1 9.1279908138e-01  -1.90e+06  3.14e-08    2.729467e-07   4.748268e-02
+   2 6.3518827970e-03  -1.43e+07  3.14e-09    4.808826e-07  -4.685094e-03
+   3 6.2989168903e-03  -8.41e+02  3.14e-10    4.824841e-07  -5.087347e-03
+   4 6.2989168900e-03  -4.99e-06  3.14e-11    4.824842e-07  -5.087378e-03
+iter      chisq       delta/lim  lambda   a             b            
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.00629892
+rel. change during last iteration : -4.98827e-11
+
+degrees of freedom    (FIT_NDF)                        : 995
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00251606
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.33057e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 4.82484e-07      +/- 5.537e-10    (0.1148%)
+b               = -0.00508738      +/- 0.0001602    (3.149%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.868  1.000 
+

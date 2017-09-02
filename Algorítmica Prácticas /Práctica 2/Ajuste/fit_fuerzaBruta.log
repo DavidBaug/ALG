@@ -1,0 +1,37 @@
+
+
+*******************************************************************************
+Tue Apr  4 01:04:04 2017
+
+
+FIT:    data read from 'tiempos_prefences_fuerzaBruta.dat'
+        format = z
+        #datapoints = 26
+        residuals are weighted equally (unit weight)
+
+function used for fitting: (a*x*x)+(b*x)+d
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             d            
+   0 1.4145008888e-04   0.00e+00  6.37e-01    2.395163e-10   3.778314e-08   1.170323e-03
+   1 1.4145008888e-04  -8.43e-10  6.37e-02    2.395163e-10   3.778314e-08   1.170323e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.00014145
+rel. change during last iteration : -8.4314e-15
+
+degrees of freedom    (FIT_NDF)                        : 23
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00247992
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.15e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 2.39516e-10      +/- 6.055e-13    (0.2528%)
+b               = 3.77831e-08      +/- 6.269e-08    (165.9%)
+d               = 0.00117032       +/- 0.001354     (115.7%)
+
+correlation matrix of the fit parameters:
+                a      b      d      
+a               1.000 
+b              -0.966  1.000 
+d               0.716 -0.846  1.000 

@@ -1,0 +1,6 @@
+Las representaciones aqui mostradas, el enumerado de sus nodos, va
+desde 1 a n mientras que el algoritmo greedy resuelve los grafos con 
+un enumerado en los nodos de 0 a n-1, es decir el grafo es el mismo 
+solo que cambia la enumeración de como están representados en las 
+imagenes que figuran en este directorio con respecto a la solución
+que proporciona el algoritmo.

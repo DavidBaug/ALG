@@ -1,0 +1,35 @@
+
+
+*******************************************************************************
+Tue Apr  4 00:58:27 2017
+
+
+FIT:    data read from 'tiempos_prefences_DyV.dat'
+        format = z
+        #datapoints = 26
+        residuals are weighted equally (unit weight)
+
+function used for fitting: (a*x*(log10(x)/log10(2)))+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 8.7988883257e-06   0.00e+00  3.72e-03    5.576237e-09  -4.800191e-05
+   1 8.7988883257e-06  -7.70e-11  3.72e-04    5.576237e-09  -4.800191e-05
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 8.79889e-06
+rel. change during last iteration : -7.70127e-16
+
+degrees of freedom    (FIT_NDF)                        : 24
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000605492
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.6662e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.57624e-09      +/- 2.352e-10    (4.218%)
+b               = -4.80019e-05     +/- 0.0002217    (461.9%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.844  1.000 
